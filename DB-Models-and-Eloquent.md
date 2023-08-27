@@ -12,7 +12,7 @@ User::withoutTimestamps(
 );
 ```
 
-# Eloquent where date methods
+## Eloquent where date methods
 
 ```php
 $users = User::whereDate('created_at', '2023-08-27')->get();
@@ -22,14 +22,14 @@ $users = User::whereYear('created_at', date('Y'))->get();
 $users = User::whereTime('created_at', '=', '20:32:11')->get();
 ```
 
-# Model all: columns  
+## Model all: columns  
 When calling Eloquent's Model::all(), you can specify which columns to return.
 
 ```php
 $users = User::all(['id', 'name', 'email']);
 ```
 
-# Change Default Timestamp Fields
+## Change Default Timestamp Fields
 When calling Eloquent's Model::all(), you can specify which columns to return.
 
 ```php
@@ -40,7 +40,7 @@ class User extends Model
 }
 ```
 
-# Order by created_at
+## Order by created_at
 Instead of:
 
 
@@ -51,4 +51,4 @@ Shorter Code:
 ```php
 User::latest()->get();
 ```
-NOTE: By default, latest() will order by created_at.
+NOTE: By default, >latest() will order by created_at.
