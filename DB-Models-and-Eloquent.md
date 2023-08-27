@@ -21,3 +21,10 @@ $users = User::whereDay('created_at', '2')->get();
 $users = User::whereYear('created_at', date('Y'))->get();
 $users = User::whereTime('created_at', '=', '20:32:11')->get();
 ```
+
+# Model all: columns  
+When calling Eloquent's Model::all(), you can specify which columns to return.
+
+```php
+$users = User::all(['id', 'name', 'email']);
+```
