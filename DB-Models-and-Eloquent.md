@@ -39,3 +39,16 @@ class User extends Model
     const UPDATED_AT = 'update_time';
 }
 ```
+
+# Order by created_at
+Instead of:
+
+
+```php
+User::orderBy('created_at', 'desc')->get();
+```
+Shorter Code:
+```php
+User::latest()->get();
+```
+NOTE: By default, latest() will order by created_at.
