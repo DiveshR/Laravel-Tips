@@ -28,3 +28,14 @@ When calling Eloquent's Model::all(), you can specify which columns to return.
 ```php
 $users = User::all(['id', 'name', 'email']);
 ```
+
+# Change Default Timestamp Fields
+When calling Eloquent's Model::all(), you can specify which columns to return.
+
+```php
+class User extends Model
+{
+    const CREATED_AT = 'create_time';
+    const UPDATED_AT = 'update_time';
+}
+```
