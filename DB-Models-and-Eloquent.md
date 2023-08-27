@@ -51,4 +51,5 @@ Shorter Code:
 ```php
 User::latest()->get();
 ```
-NOTE: By default, <span style="background-color: yellow;">latest()</span> will order by created_at.
+Highlighted text
+NOTE: By default, <mark style="background-color: yellow;">latest()</mark> will order by  <mark style="background-color: yellow;">created_at.</mark>
