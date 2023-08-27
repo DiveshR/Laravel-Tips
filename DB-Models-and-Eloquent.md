@@ -1,6 +1,6 @@
 # DB Models and Eloquent
 
-# Perform operation without modifying updated_at field
+## Perform operation without modifying updated_at field
 
 ```php
 $user = User::first();
